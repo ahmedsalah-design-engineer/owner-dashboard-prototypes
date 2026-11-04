@@ -1,0 +1,150 @@
+/*
+ * Design system 1.0 tokens used by "Home · Owner dashboard".
+ * Source: Figma file C0gxmWnJqwB7PzFp1fxhbl (Design system 1.0), node 44:283,
+ * read with get_variable_defs on 2026-11-04. Names match the Figma variables 1:1.
+ *
+ * Note: these are NOT the LV1 tokens in packages/tokens (different names and
+ * scale, e.g. spacing-md is 16 here and 12 in LV1).
+ */
+:root {
+  /* Brand ramps */
+  --db-brand-primary-50: #f6f9ff;
+  --db-brand-primary-500: #4a92eb;
+  --db-brand-primary-600: #2875d1;
+  --db-brand-secondary-50: #fef8f3;
+  --db-brand-secondary-300: #fbbd98;
+  --db-brand-secondary-400: #ec9867;
+  --db-brand-secondary-600: #a65117;
+  --db-brand-extended-teal-50: #f0fcfc;
+  --db-brand-extended-teal-300: #95dbda;
+  --db-brand-extended-teal-400: #5bc3c2;
+  --db-brand-extended-teal-600: #028787;
+  --db-brand-extended-violet-50: #f9f8ff;
+  --db-brand-extended-violet-400: #b29ffe;
+  --db-brand-extended-violet-600: #7b5dd0;
+  --db-brand-alpha-white-5: #ffffff0d;
+
+  /* Backgrounds */
+  --color-bg-page: #f8f9fb;
+  --color-bg-surface: #ffffff;
+  --color-bg-surface-sunken: #eff1f4;
+  --color-bg-brand-subtle: #f6f9ff;
+
+  /* Text */
+  --color-text-primary: #293038;
+  --color-text-secondary: #57606b;
+  --color-text-tertiary: #6e7783;
+  --color-text-brand: #002d60;
+  --color-text-accent: #a65117;
+  --color-text-link: #1a65bb;
+  --color-text-on-brand: #ffffff;
+
+  /* Icons */
+  --color-icon-primary: #3f4751;
+  --color-icon-secondary: #6e7783;
+  --color-icon-brand: #1a65bb;
+
+  /* Borders */
+  --color-border-subtle: #eff1f4;
+  --color-border-brand: #1a65bb;
+
+  /* Navigation */
+  --color-nav-border: #dee2e8;
+  --color-nav-item-active: #f6f9ff;
+  --color-nav-text: #57606b;
+  --color-nav-text-active: #02448a;
+  --color-nav-icon: #6e7783;
+  --color-nav-section-label: #57606b;
+
+  /* Actions */
+  --color-action-primary-bg: #1a65bb;
+  --color-action-primary-text: #ffffff;
+  --color-action-neutral-bg: #ffffff;
+  --color-action-neutral-border: #c7cdd5;
+  --color-action-neutral-text: #3f4751;
+
+  /* Status */
+  --color-status-success-bg: #f2fcf5;
+  --color-status-success-border: #c7edd3;
+  --color-status-success-text: #027240;
+  --color-status-success-icon: #078d50;
+  --color-status-warning-bg: #fef9ed;
+  --color-status-warning-border: #f6dfb5;
+  --color-status-warning-text: #845300;
+  --color-status-warning-icon: #a06902;
+  --color-status-warning-solid: #845300;
+  --color-status-error-bg: #fff7f6;
+  --color-status-error-icon: #d22e2c;
+  --color-status-error-solid: #b40413;
+  --color-status-error-on-solid: #ffffff;
+
+  /* Trend */
+  --color-trend-positive-bg: #f2fcf5;
+  --color-trend-positive-text: #027240;
+  --color-trend-positive-icon: #078d50;
+  --color-trend-negative-bg: #fff7f6;
+  --color-trend-negative-text: #b40413;
+  --color-trend-negative-icon: #d22e2c;
+
+  /* Charts */
+  --color-chart-categorical-1: #2875d1;
+  --color-chart-categorical-3: #028787;
+  --color-chart-categorical-4: #947bea;
+
+  /* Sidebar brand (node 69:576) */
+  --nav-sidebar-brand-padding-right: 4px;
+  --nav-sidebar-collapse-button-radius: 6px;
+
+  /* Spacing */
+  --spacing-none: 0px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 32px;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-card: 16px;
+  --radius-control: 8px;
+  --radius-badge: 9999px;
+  --radius-avatar: 9999px;
+  --radius-full: 9999px;
+
+  /* Borders */
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+
+  /* Sizes */
+  --size-control-sm: 32px;
+  --size-control-md: 40px;
+  --size-avatar-md: 40px;
+  --size-badge-md: 24px;
+  --size-icon-sm: 16px;
+  --size-icon-md: 20px;
+
+  /* Type */
+  --family-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --family-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --display-sm-size: 32px;  --display-sm-line-height: 40px;
+  --heading-lg-size: 24px;  --heading-lg-line-height: 32px;
+  --heading-sm-size: 18px;  --heading-sm-line-height: 28px;
+  --body-lg-size: 18px;     --body-lg-line-height: 28px;
+  --body-md-size: 16px;     --body-md-line-height: 24px;
+  --body-sm-size: 14px;     --body-sm-line-height: 20px;
+  --body-xs-size: 12px;     --body-xs-line-height: 16px;
+  --label-md-size: 14px;    --label-md-line-height: 20px;
+  --label-sm-size: 12px;    --label-sm-line-height: 16px;
+  --numeric-lg-size: 32px;  --numeric-lg-line-height: 40px;
+  --numeric-md-size: 24px;  --numeric-md-line-height: 32px;
+  --numeric-sm-size: 16px;  --numeric-sm-line-height: 24px;
+  --numeric-xs-size: 14px;  --numeric-xs-line-height: 20px;
+}
