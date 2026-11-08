@@ -6,12 +6,6 @@
   <title>Home · DentalBase (v2)</title>
   <script>
     document.documentElement.classList.add('js');
-    // Full intro once a day; later visits show final numbers straight away.
-    try {
-      var k = 'db-intro-' + new Date().toDateString();
-      if (localStorage.getItem('db-intro') === k) document.documentElement.classList.add('intro-seen');
-      else localStorage.setItem('db-intro', k);
-    } catch (e) {}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

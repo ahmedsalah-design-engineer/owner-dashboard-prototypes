@@ -11,11 +11,10 @@
   var useEffect = D.React.useEffect;
 
   /* ---------- Motion: v2's intro, from the design system ----------
-     The full intro plays once a day (the head script sets .intro-seen on later visits); after that the
-     page arrives quickly with figures already in place. HOLD lets the briefing card lead: the cards
-     below wait for it. Reveal, animate and attention all stop under reduced motion. */
-  // ?intro in the address replays it on demand (for reviewing the motion).
-  var intro = /[?&]intro(=|&|$)/.test(location.search) || !document.documentElement.classList.contains('intro-seen');
+     The full intro plays on every load: this is a prototype people open to review the motion.
+     ?quick in the address skips it (figures already in place). HOLD lets the briefing card lead: the
+     cards below wait for it. Reveal, animate and attention all stop under reduced motion. */
+  var intro = !/[?&]quick(=|&|$)/.test(location.search);
   var animate = intro;
   var HOLD = intro ? 1300 : 0;
 
