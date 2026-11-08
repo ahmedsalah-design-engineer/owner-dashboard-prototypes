@@ -2287,3 +2287,34 @@ button.avatar {
     animation: none !important;
   }
 }
+
+/* ---------- Schedule page (schedule.html) ---------- */
+.schedule-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+.schedule-status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-2xs);
+}
+.schedule-chairs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+.schedule-side {
+  /* The panel stays in view while the chairs scroll past it. */
+  position: sticky;
+  top: var(--spacing-xl);
+  align-self: flex-start;
+}
+@media (max-width: 1279px) {
+  /* Stacked, the quick wins come first: they are the reason to open the page. */
+  .schedule-side {
+    position: static;
+    align-self: stretch;
+    order: -1;
+  }
+}
